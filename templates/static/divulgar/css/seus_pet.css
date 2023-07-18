@@ -1,0 +1,21 @@
+.width80{
+    width: 80vw; 
+}
+
+.tabela{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.tabela-linha{
+    background-color: #e8e7e7;
+}
+
+.blue-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
