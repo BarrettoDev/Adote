@@ -11,12 +11,16 @@
     <link href="{% static 'divulgar/css/seus_pet.css' %}" rel="stylesheet">
     <link href="{% static 'adotar/css/listar_pets.css' %}" rel="stylesheet">
     </head>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <body>
 
         <div class="container-fluid vh-100">
             <div class="row h-100">
                 <div class="col-lg-2 col-md-4 col-sm-4 col-6 bg-side-plataforma sidebar d-flex flex-column">
-                    <h2>ADO.TE</h2>
+                    <lottie-player src="https://lottie.host/37ac0c6f-c033-48d4-8560-f8fc7dbd4d67/8jK52lH0Uc.json" 
+                            background="transparent"  speed="1" style="width: 300px; height: 300px;" loop autoplay>
+                    </lottie-player>
+                    <h2>BUSCA PET</h2>
                     <hr>
                     <button class="btn-custom-primary" onclick="location.href='{% url 'novo_pet' %}'">Divulgar</button>
                     <button class="btn-custom-primary" onclick="location.href='{% url 'listar_pets' %}'">Adotar</button>
