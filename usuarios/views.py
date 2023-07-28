@@ -5,7 +5,6 @@ from django.contrib import messages
 from django.contrib.messages import constants
 from django.contrib.auth import authenticate, login, logout
 from django.shortcuts import redirect
-import json
 
 # Create your views here.
 def cadastro(request):
