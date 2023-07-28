@@ -66,14 +66,3 @@ def sair(request):
     logout(request)
     return redirect('/auth/login')
 
-def my_view(request):
-    # Carrega o conteúdo do primeiro arquivo JSON
-    with open("usuarios\templates\logo2.json") as json_file:
-        gif1 = json.load(json_file)
-    
-    # Carrega o conteúdo do segundo arquivo JSON
-    with open("usuarios\templates\img2.json") as json_file:
-        gif2 = json.load(json_file)
-    
-    # Passa o conteúdo dos arquivos JSON para o template
-    return render(request, 'my_template.html', {'gif1': gif1, 'gif2': gif2})
